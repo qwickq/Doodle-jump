@@ -1,6 +1,4 @@
-from arcade import Window, Sprite, SpriteList
-from arcade import run, set_background_color
-from arcade import color
+from arcade import Sprite, SpriteList, Window, color, run, set_background_color
 
 
 class MyWindow(Window):
@@ -17,7 +15,6 @@ class MyWindow(Window):
     def setup(self):
         """Загружает и создает все необходимые объекты для игры/уровня/режима"""
         self.hero = Sprite("assets/main_hero.png", 1.5)
-        
 
         self.players = SpriteList()
         self.players.append(self.hero)

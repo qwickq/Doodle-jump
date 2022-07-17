@@ -3,6 +3,7 @@ from arcade import Sprite, SpriteList, Window, color, run, set_background_color
 
 class MyWindow(Window):
     """Главное окно в игре"""
+
     def __init__(self, background: tuple[int, int, int] = color.PURPLE_NAVY):
         """Конструктор для создания обычного окна"""
         super().__init__(fullscreen=False)
@@ -14,7 +15,9 @@ class MyWindow(Window):
 
     def setup(self):
         """Загружает и создает все необходимые объекты для игры/уровня/режима"""
-        self.hero = Sprite("assets/main_hero.png", 1.5)
+        self.hero = Sprite("assets/main_hero.png", 1)
+        self.hero.center_x = 100
+        self.hero.center_y = 100
 
         self.players = SpriteList()
         self.players.append(self.hero)

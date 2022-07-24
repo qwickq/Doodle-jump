@@ -1,14 +1,4 @@
-from arcade import (
-    PhysicsEnginePlatformer,
-    Sprite,
-    SpriteList,
-    Window,
-    color,
-    key,
-    run,
-    set_background_color,
-    close_window,
-)
+from arcade import Sprite, SpriteList, Window, color, run, set_background_color
 
 
 class MyWindow(Window):
